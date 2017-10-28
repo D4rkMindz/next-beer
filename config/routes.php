@@ -30,4 +30,6 @@ $routes->add('/authorize_add',
     route(['POST', 'OPTIONS'], '/authorize', ['App\Controller\Api\AuthorizationController', 'getAuth']));
 $routes->get('/authorize_add')->addDefaults(['_auth' => false]);
 
+$routes->add('/example', route('GET', '/example', ['App\Controller\ExampleController', 'index']));
+
 return $routes;

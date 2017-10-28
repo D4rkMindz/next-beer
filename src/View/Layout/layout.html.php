@@ -40,6 +40,7 @@
     <link rel='stylesheet' type='text/css' href='css/notifIt.css'>
     <link rel="stylesheet" href="css/style.css">
 
+<!--    Assets will be loaded here. They are minified (depending on the configuration in the config.php file)-->
     <?= $this->section('assets') ?>
 
     <title><?= $this->wh("page") ?></title>
